@@ -1,0 +1,139 @@
+{
+    "header": {
+        "logo": "Indigo Flow",
+        "personal": "Personal",
+        "tarot": "Tarot Readings Online"
+    },
+    "greetings":{
+        "hello": "Hello Indigo Souls",
+        "welcome": "I’m happy to welcome you on my official website and connect with your beautiful energy"
+    },
+    "aboutMe":{
+        "name": "My name is Kate",
+        "profession": "I am a practicing tarot reader with a background   in psychology. I started my pathway in Tarot cards 11 years ago. Back then, it was not so easy to find good specialists or education in this field."
+    },
+    "AboutIndigoFlow":{
+        "AboutIndigoFlow": "About Indigo Flow",
+        "changes": "This area has gone through significant changes in recent years. An increasing number of people are engaged in self-development. Psychology and spirituality help us find answers to our questions, thereby healing the soul from old wounds and accumulated negativity. They allow us to discover the core of the problem, unwind the tangle of external and internal circumstances and find an adequate solution, paving the way for a prosperous future. A conscious path is exactly what we all aspire to. Tarot cards are one of the most effective instruments for psychological work on yourself and spiritual growth.",
+        "MyProfessionalExperience": "My professional experience and personal life have also overcome through many changes in the last 10 years. In addition to my basic Tarot knowledge, I’ve got a degree in psychology in Europe, studied the power of meditation, and I am a certified Mindfulness Coach; dived into work with Tarot cards, developing my knowledge with a variety of books, courses and, of course, practice.",
+        "MyProfessionalExperienceContinuation": "Many people know that the best psychologists and spiritual guides are those who have undergone many difficulties in their lives and were able to help themselves, looking for keys and engaging in endless psychological self-development. I can easily say it about myself. Without diving into unnecessary details, I can tell that I have personally experienced many situations such as studies abroad, numerous trips and long-term residence in Europe and Asia, working with people of different nationalities in companies of various directions, scales and financial opportunities and, of course, building love relationships and friendship. I know firsthand what it is like to overcome serious illnesses (from the experience of my relatives), participation in magical wars (when you have to cleanse yourself and defend yourself from magical influences), building your life from 0, periods of different income and lifestyle. I will be glad to help you review and improve your life with the help of Tarot cards, and, if necessary, share my personal experience."
+    },
+    "cardService":{
+        "services": "Services",
+        "activities": "At the moment, my activities include:",
+        "myServices":{
+            "tarotReading": "Personal Tarot readings online and spiritual guidance",
+            "content": "Entertaining and educational Tarot content on YouTube, TikTok, Instagram",
+            "creativeProjects": "Art direction & advising of creative projects involving psychology and spirituality"
+        },
+        "buttonLearnMore": "Learn More"
+    },
+    "ConsultingTopics":{
+        "title": "Consultation Topics",
+        "title2": "During your personal consultations, we will consider all your questions. Such questions may be:",
+        "BusinessConsulting":{
+            "title": "Business Consulting",
+            "text_1": "launching a new project",
+            "text_2": "the right strategy",
+            "text_3": "competitors",
+            "text_4": "financing",
+            "text_5": "extension",
+            "text_6": "potential of specialists",
+            "text_7": "transactions"
+        },
+        "Studies&Work":{
+            "title": "Studies & Work",
+            "text_1": "choice of direction in study and / or educational institution",
+            "text_2": "situations during the educational process",
+            "text_3": " job change",
+            "text_4": "team",
+            "text_5": "general situation in the workplace"
+        },
+        "loveRelationships":{
+            "title": "Love relationships",
+            "text_1": "feelings, thoughts, plans, actions of a partner",
+            "text_2": "how does your partner see you",
+            "text_3": "further development of relationships",
+            "text_4": "the situation of choice"
+        },
+        "Society":{
+            "title": "Society",
+            "text_1": "how people perceive you",
+            "text_2": "family secrets",
+            "text_3": "conflict situations"
+        },
+        "PersonalDevelopment":{
+            "title": "Personal development",
+            "text_1": "your karmic path",
+            "text_2": "your past, present and future",
+            "text_3": "the lessons you are currently going through",
+            "text_4": "meaning in life"
+        },
+        "Relocation":{
+            "title": "Relocation / Tourist trips",
+            "text_1": "questions of choice: to go or not to go, where to go",
+            "text_2": "how to settle in a new place",
+            "text_3": " pitfalls of moving"
+        },
+        "OtherTopics":{
+            "title": "Other topics",
+            "text_1": " I am open to a variety of topics that interest you",
+            "text_2": " I am open to a variety of topics that interest you",
+            "text_3": "honesty with yourself and the tarot reader in my face will allow you to find the most effective solution to any situation."
+        },
+        "button": "Contact Indie"
+    },
+    "OnlineConsultations":{
+        "title": "Online Consultations",
+        "paragraph_1": "Classic Tarot Reading",
+        "paragraph_2": "Thematic Tarot Reading",
+        "paragraph_3": "Express Tarot Reading",
+        "paragraph_4": "Golden Card"
+    },
+    "ChooseYourPackage":{
+        "title": "Choose your package",
+        "packages":{
+            "card_1":{
+                "title": "Classic",
+                "aboutThePackage": "A full consultation, including the whole range of topics and questions that interest you",
+                "duration": "Duration: 1 hour",
+                "service": "The service is provided on the day and time you choose, reserved in advance in direct  (Telegram, Whatsapp)",
+                "cost": "Cost: $150 / consultation",
+                "button": "Order Classic Tarot Reading"
+            },
+            "card_2":{
+                "title": "Thematic",
+                "aboutThePackage": "Consultation on one specific topic, e.g. relationship with a person; the situation in the workplace; opening a business; moving to another country",
+                "duration": "Duration: 30 minutes",
+                "service": "The service is provided on the day and time you choose, reserved in advance in direct  (Telegram, Whatsapp)",
+                "cost": "Cost: $75 / consultation",
+                "button": "Order Thematic Tarot Reading"
+            },
+            "card_3":{
+                "title": "Express",
+                "aboutThePackage": "10-minute answer to 1 question in the format of a video recording or voice message",
+                "duration": "Duration: 10 minutes",
+                "service": "The service is reserved in direct (Telegram, Whatsapp)",
+                "cost": "Cost: $25 per response, is delivered within 1–3 days",
+                "urgentResponse": "Urgent response: $50 per response is delivered within 1–3 hours",
+                "button": "Order Express Tarot Reading"
+            },
+            "card_4":{
+                "title": "Golden Card",
+                "aboutThePackage": "The card includes 4 hours of consultations per month. 1 hour per week.",
+                "duration": "Duration: 4 hour consultation",
+                "service": "The service is reserved in advance in direct (Telegram, Whatsapp)",
+                "cost": "Cost: $540 per card ($135 per hour, 10% discount)",
+                "addition": {
+                    "title": "You can spend this time on:",
+                    "text_1": "1 classic tarot reading;",
+                    "text_2": "2 thematic tarot readings;",
+                    "text_3": "Ask 6 questions for 10 minutes each (6 express tarot readings)."
+                },
+                "button": "Order Golden Card"
+            }
+        }
+    },
+    "Socials": "Socials",
+    "Contact": "Contact"
+}    
