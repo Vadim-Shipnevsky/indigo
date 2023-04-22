@@ -1,7 +1,9 @@
+
+  @use 'sass:math';
 .header{
     display: flex;
     justify-content: center;
-    background: 100% url("../../public/hatBackground.jpg");
+    // background: 100% url("img/hatBackground.jpg");
     max-width: 100%;
     min-height: 59.5rem;
    
@@ -12,7 +14,11 @@
     width: 18.6875rem;
     height: 18.9375rem;
     z-index: 1;
-    background: url("../../public/logo.png");
+    // background: url("img/logo.png");
     background-position: center;
     background-size: 100%;
+}
+.sss{
+    color: color(gray-100);
+    font-size: 1.875rem;
 }

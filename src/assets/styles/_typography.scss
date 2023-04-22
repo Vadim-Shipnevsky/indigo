@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+
+$fonts: (
+    11: 0.6875rem,
+    12: 0.75rem,
+    14: 0.875rem,
+    15: 0.9375rem,
+    16: 1rem,
+    18: 1.125rem,
+    20: 1.25rem,
+    24: 1.5rem,
+    32: 2rem,
+    40: 2.5rem,
+    48: 3rem,
+    56: 3.5rem,
+    64: 4rem,
+    80: 5rem,
+    128: 8rem,
+    160: 10rem,
+);
+
+@function font($name) {
+  @if not map-get($fonts, $name) {
+    @error '"#{$name}" is not a valid font value';
+    @return var(--invalid-font-size-name);
+  }
+  @return var(--font-size-#{$name});
+}
+
+@mixin font-hauora-light() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 300;
+}
+@mixin font-hauora-regular() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 400;
+}
+@mixin font-hauora-medium() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 500;
+}
+
+@mixin font-hauora-rare() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 600;
+}
+
+@mixin font-hauora-bold() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 700;
+}
+@mixin font-hauora-extrabold() {
+  font-family: 'Hauora', sans-serif;
+  font-weight: 800;
+}
+
+@mixin font-montserrat-medium() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+@mixin font-montserrat-bold() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+@mixin font-montserrat-extrabold() {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
