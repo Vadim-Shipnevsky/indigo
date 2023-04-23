@@ -1,0 +1,22 @@
+@use 'sass:map';
+
+$colors: (
+    gray-6: #F2F2F2,
+    white: #FFFFFF,
+    peach: #DAAFA6,
+    text-orange: #FFB9AB,
+    blue: #002B66,
+    classic: #A0CAD7,
+    thematic: #D7A0C4,
+    express: #DF8282,
+    golden: #F4CA99,
+);
+
+@function color($name) {
+    @if not map.get($colors, $name) {
+        @error '"#{$name}" is not a valid color name';
+    }
+
+    @return var(--color-#{$name})
+};
+ 

@@ -1,0 +1,44 @@
+@use "@/assets/styles/globals.scss" as *;
+
+.header_1{
+    background: 100% url("/hatBackground.jpg");
+    max-width: 100%;
+    min-height: rem(952);
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // max-width: 100%;
+    // min-height: rem(952);
+
+}
+
+.logoConteiner {
+    display: flex;
+    justify-content: center;
+    margin-top: rem(219);
+
+    .logo {
+        width: rem(299);
+        height: rem(303);
+        background: url("/logo.png");
+        z-index: 1;
+        background-position: center;
+        background-size: 100%;
+        
+    }
+    .logo_text {
+        font-size: font(25);
+        text-align: justify;
+        hyphens: auto;
+    }
+}
+
+.tarot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+

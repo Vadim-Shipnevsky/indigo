@@ -1,12 +1,9 @@
-@use './colors' as *;
-@use './functions' as *;
-@use './grid' as *;
+@use './_colors.scss' as *;
+@use './_functions.scss' as *;
+@use './_grid.scss' as *;
 
-// @import '../fonts/stylesheet';
-@import './normalize';
-@import './typography';
-
-// @import './smoothscroll.scss';
+@import './normalize.scss';
+@import './typography.scss';
 
 
 :root {
@@ -25,7 +22,7 @@
 }
 
 html {
-    color: color(black);
+    color: color(white);
     @include generate-grid();
     font-size: var(--breakpoint-font-xlg);
 }
@@ -33,5 +30,5 @@ html {
 html, body {
     position: relative;
     overscroll-behavior-y: none;
-    background-color: color(white-100);
+    background-color: color(gray-6);
 }

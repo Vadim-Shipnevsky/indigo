@@ -1,6 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+@font-face {
+  font-family: 'Kurale';
+  src: url('../fonts/Kurale-Regular.ttf');
+}
 
 $fonts: (
+    
     11: 0.6875rem,
     12: 0.75rem,
     14: 0.875rem,
@@ -9,6 +15,7 @@ $fonts: (
     18: 1.125rem,
     20: 1.25rem,
     24: 1.5rem,
+    25: 1.5921rem,
     32: 2rem,
     40: 2.5rem,
     48: 3rem,
@@ -26,6 +33,13 @@ $fonts: (
   }
   @return var(--font-size-#{$name});
 }
+
+
+@mixin font-kurale() {
+  font-family: 'Kurale', sans-serif;
+  font-weight: 400;
+}
+
 
 @mixin font-hauora-light() {
   font-family: 'Hauora', sans-serif;
