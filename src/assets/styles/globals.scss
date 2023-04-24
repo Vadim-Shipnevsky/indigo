@@ -1,16 +1,4 @@
-// html{
-//     box-sizing: border-box;
-//     font-size: calc(1vw)
-// }
 
-// body{
-//     overflow: hidden;
-//     margin: 0;
-//     padding: 0;
-// }
-
-
-// $colors - прячем переменную и предоставляем доступ к функциям 
 @forward './colors.scss' hide $colors;
 @forward './typography.scss' hide $fonts;
 @forward './grid.scss' hide $breakpoints, $breakpoints-fonts, point, generate-grid;

@@ -2,7 +2,7 @@
 import '../i18n';
 import React, { Suspense } from "react";
 import { useTranslation } from 'react-i18next';
-import Header from "../components/Header/Header";
+import Header from "../components/Header/Header.jsx";
 import Head from 'next/head';
 
 

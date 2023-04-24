@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-
+import styles from './menu.module.scss'
 const Menu = () => {
-    
-    return(
+
+    return (
         <div>
-            menu
+            <div>
+                menu
+            </div>
         </div>
+
     )
-  }
-  
-  export default Menu
+}
+
+export default Menu
