@@ -1,0 +1,44 @@
+@use "@/assets/styles/globals.scss" as *;
+
+
+.container {
+    max-width: 100%;
+    height: rem(946);
+    background: 100% url("/backgroundMe.jpg");
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .greetings {
+        max-width: rem(881);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font-kurale();
+
+        .hello {
+            min-width: rem(345);
+            height: rem(312);
+            display: flex;
+            align-items: center;
+            text-align: right;
+            font-size: font(80);
+            line-height: 130%;
+            color: colot(peach);
+        }
+
+        .welcome {
+            min-width: rem(574);
+            height: rem(501);
+            background: rgba(0, 16, 78, 0.12);
+            backdrop-filter: blur(rem(22));
+            border-radius: rem(41);
+            @include font-kurale();
+            font-size: font(30);
+            font-style: normal;
+            line-height: 130%;
+            color: color(peach);
+        }
+    }
+}

@@ -2,15 +2,17 @@
 
 $breakpoints: (
   // xlg: 1920px,
-  xslg: 1692px,
+  xlg: 1692px,
+  
   // lg: 1440px,
   // md: 1080px,
-  // xsm: 576px
+  xsm: 575px
 );
 
 $breakpoints-fonts: (
   // xlg: 0.83333333333333vw,
-  xslg: 1vw,
+  xlg: 1vw,
+  
   // lg: 1.25vw,
   // md: 1.48148148vw,
   // xsm: 2.77778vw,
@@ -29,7 +31,6 @@ $breakpoints-fonts: (
   }
 
   @mixin generate-grid {
-
     @each $name,
     $size in $breakpoints-fonts {
       @media screen and (max-width: point($name)) {
@@ -44,8 +45,14 @@ $breakpoints-fonts: (
   //   }
   // }
 
-  @mixin xslg {
-    @media screen and (max-width: point(xslg)) {
+  @mixin xlg {
+    @media screen and (max-width: point(xlg)) {
+      @content;
+    }
+  }
+
+  @mixin xsm {
+    @media screen and (max-width: point(xsm)) {
       @content;
     }
   }

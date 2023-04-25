@@ -11,7 +11,6 @@ const Header = () => {
     return (
         <div className={styles.header_1}>
             <MenuButton />
-            {/* <Image className={styles.logo} src='/logo.png' alt='' width={299} height={303}/> */}
             <div className={styles.header}>
                 <div className={styles.logoConteiner}>
                     <div className={styles.logo}>
@@ -24,7 +23,9 @@ const Header = () => {
                     <p>{t('header.personal')}</p>
                     <h2>{t('header.tarot')}</h2>
                 </div>
-                <button className={styles.button_footer}></button>
+                <a className={styles.arrow} href='#'>
+                    <Image className={styles.arrow1} src='/arrow.png' alt='' width={45} height={23} />
+                </a>
             </div>
         </div>
 

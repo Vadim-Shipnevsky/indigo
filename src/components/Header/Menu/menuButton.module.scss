@@ -1,15 +1,21 @@
 @use "@/assets/styles/globals.scss" as *;
 
 
-.containerMenu{
+.containerMenu {
     display: flex;
     flex-direction: column;
 }
+
 .buttonMenu {
     display: flex;
     justify-content: end;
     margin: 0 rem(69);
     padding-top: rem(53);
+
+    @include xsm {
+        margin: 0 auto;
+    }
+
     .button {
         min-width: rem(199);
         min-height: rem(82);
@@ -27,11 +33,17 @@
         color: color(white);
         text-transform: uppercase;
         text-shadow: 0px rem(14) rem(14) rgba(0, 0, 0, 0.25);
+
+        @include xsm {
+            min-width: rem(199);
+            min-height: rem(82);
+        }
+
         &:hover {
             transition: all 100ms ease-in;
             background: rgba(color(classic), 0.8);
             cursor: pointer;
         }
-        
+
     }
 }
