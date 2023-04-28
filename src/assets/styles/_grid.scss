@@ -1,101 +1,80 @@
 @use 'sass:map';
 
 $breakpoints: (
-  // xlg: 1920px,
   xlg: 1692px,
-  
-  // lg: 1440px,
-  // md: 1080px,
+  lg: 1440px,
+  md: 1080px,
   xsm: 575px
 );
 
 $breakpoints-fonts: (
-  // xlg: 0.83333333333333vw,
-  xlg: 1vw,
-  
-  // lg: 1.25vw,
-  // md: 1.48148148vw,
-  // xsm: 2.77778vw,
+  xlg: 0.95vw,
+  lg: 1.11vw,
+  md: 1.48148148vw,
+  xsm: 3.72vw,
 );
 
-@mixin transform  {
+@mixin transform {
   @for $i from 1 through 11 {
     &:nth-child(#{$i}) {
-      transform : rotate(+$i*36deg) !important;
+      transform: rotate(+$i*36deg) !important;
     }
   }
 }
 
-  @function point($name) {
-    @return map.get($breakpoints, $name);
-  }
+@function point($name) {
+  @return map.get($breakpoints, $name);
+}
 
-  @mixin generate-grid {
-    @each $name,
-    $size in $breakpoints-fonts {
-      @media screen and (max-width: point($name)) {
-        font-size: var(--breakpoint-font-#{$name});
-      }
+@mixin generate-grid {
+
+  @each $name,
+  $size in $breakpoints-fonts {
+    @media screen and (max-width: point($name)) {
+      font-size: var(--breakpoint-font-#{$name});
     }
   }
+}
 
-  // @mixin xlg {
-  //   @media screen and (max-width: point(xlg)) {
-  //     @content;
-  //   }
-  // }
+// @mixin xlg {
+//   @media screen and (max-width: point(xlg)) {
+//     @content;
+//   }
+// }
 
-  @mixin xlg {
-    @media screen and (max-width: point(xlg)) {
-      @content;
-    }
+@mixin xlg {
+  @media screen and (max-width: point(xlg)) {
+    @content;
   }
+}
 
-  @mixin xsm {
-    @media screen and (max-width: point(xsm)) {
-      @content;
-    }
+@mixin xsm {
+  @media screen and (max-width: point(xsm)) {
+    @content;
   }
+}
 
-  // @mixin lg {
-  //   @media screen and (max-width: point(lg)) {
-  //     @content;
-  //   }
-  // }
+@mixin md {
+  @media screen and (max-width: point(md)) {
+    @content;
+  }
+}
 
-  // @mixin md {
-  //   @media screen and (max-width: point(md)) {
-  //     @content;
-  //   }
-  // }
+// @mixin lg {
+//   @media screen and (max-width: point(lg)) {
+//     @content;
+//   }
+// }
+
+// @mixin md {
+//   @media screen and (max-width: point(md)) {
+//     @content;
+//   }
+// }
 
 
-  // @mixin xsm {
-  //   @media screen and (max-width: point(xsm)) {
-  //     @content;
-  //   }
-  // }
-
-  // @mixin lg-1440-800 {
-  //   @media screen and (min-width: 1081px) and (max-width: point(lg)) {
-  //     @media screen and (min-aspect-ratio: 1440/800) {
-  //       @content;
-  //     }
-  //   }
-  // }
-
-  // @mixin xlg-1920-1000 {
-  //   @media screen and (min-width: 1441px) {
-  //     @media screen and (min-aspect-ratio: 1920/1000) {
-  //       @content;
-  //     }
-  //   }
-  // }
-
-  // @mixin xlg-1920-850 {
-  //   @media screen and (min-width: 1441px) {
-  //     @media screen and (min-aspect-ratio: 1920/850) {
-  //       @content;
-  //     }
-  //   }
-  // }
+// @mixin xsm {
+//   @media screen and (max-width: point(xsm)) {
+//     @content;
+//   }
+// }

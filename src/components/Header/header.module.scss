@@ -1,8 +1,9 @@
 @use "@/assets/styles/globals.scss" as *;
 
 .header_1 {
-    background: 100% url("/hatBackground.jpg");
+    // background: 100% url("/hatBackground.jpg");
     background-size: cover;
+    position: relative;
     max-width: 100%;
     min-height: rem(952);
 }
@@ -23,8 +24,8 @@
         position: relative;
         width: rem(299);
         height: rem(303);
-        background: url("/logo.png");
-        z-index: 1;
+        // background: url("/logo.png");
+        // z-index: 1;
         background-position: center;
         background-size: 100%;
         margin-bottom: rem(35);
@@ -33,11 +34,8 @@
 
     .logo_text {
         position: absolute;
-        // left: 3.85rem;
-        // top: 14.6rem;
         left: 5rem;
         top: 13.6rem;
-        text-align: center;
         pointer-events: none;
         user-select: none;
         transform: rotate(225deg);
@@ -67,6 +65,7 @@
     align-items: center;
     justify-content: space-between;
     color: color(gray-6);
+    z-index: 1;
 
     @include xsm {
         max-width: rem(398);
@@ -104,6 +103,7 @@
     margin-top: rem(80);
     width: rem(45);
     height: rem(23);
+    z-index: 1;
 
     &:hover {
         width: rem(55);

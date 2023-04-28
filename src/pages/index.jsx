@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Header from "../components/Header/Header.jsx";
 import Greetings from "../components/Greetings/Greetings.jsx";
 import AboutMe from "../components/AboutMe/AboutMe.jsx";
+import AboutIndigo from "../components/AboutIndigo/AboutIndigo.jsx";
 import Head from 'next/head';
 
 
@@ -23,6 +24,7 @@ const Home = () => {
       <Header />
       <Greetings />
       <AboutMe />
+      <AboutIndigo />
     </Suspense>
   </>
 }

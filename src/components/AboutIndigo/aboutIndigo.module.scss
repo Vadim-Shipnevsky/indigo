@@ -1,0 +1,43 @@
+@use "@/assets/styles/globals.scss" as *;
+
+
+.container {
+    position: relative;
+    max-width: 100%;
+    min-height: rem(2361);
+
+    .aboutIndigo {
+        display: flex;
+        z-index: 3;
+        padding-top: rem(139);
+        margin: 0 auto;
+        max-width: rem(1017);
+        justify-content: center;
+        flex-direction: column;
+
+        h3 {
+            @include font-kurale();
+            color: color(blue);
+            font-size: font(80);
+            line-height: 130%;
+            text-align: center;
+            z-index: 1;
+        }
+        .delimiter{
+            min-width: rem(311);
+            margin: 0 auto;
+            margin-top: rem(26);
+            height: rem(1);
+            background-color: color(blue);
+            background-size: rem(1) rem(311);
+            z-index: 1;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            max-width: rem(414);
+            z-index: 2;
+        }
+
+    }
+}
