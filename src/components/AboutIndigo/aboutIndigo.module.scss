@@ -23,7 +23,8 @@
             text-align: center;
             z-index: 1;
         }
-        .delimiter{
+
+        .delimiter {
             min-width: rem(311);
             margin: 0 auto;
             margin-top: rem(26);
@@ -32,11 +33,34 @@
             background-size: rem(1) rem(311);
             z-index: 1;
         }
-        .info{
+
+        .info {
             display: flex;
+            padding-top: rem(54);
             justify-content: space-between;
-            max-width: rem(414);
             z-index: 2;
+
+            .blockInfo {
+                max-width: rem(414);
+
+                p {
+                    @include sbc-font-Regular();
+                    font-size: font(22);
+                    line-height: 130%;
+                    padding-bottom: rem(35);
+                    color: color(blue);
+                    
+                }
+                .firstLitter:first-child {
+                    &::first-letter {
+                        @include font-kurale();
+                        font-size: font(80);
+                        float: left;
+                        padding-top: rem(18);
+                        margin-right: rem(5); 
+                      }
+                }
+            }
         }
 
     }

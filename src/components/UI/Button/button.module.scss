@@ -1,0 +1,19 @@
+@use "@/assets/styles/globals.scss" as *;
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(24) rem(50);
+    gap: rem(10);
+    border-radius: rem(120);
+    background: color(white);
+
+    .button {
+        @include font-kurale();
+        font-size: font(24);
+        line-height: 130%;
+        text-align: center;
+        color: color(blue);
+    }
+}
