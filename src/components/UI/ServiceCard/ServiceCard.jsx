@@ -3,12 +3,10 @@ import React from 'react';
 import stules from './serviceCard.module.scss';
 import Button from '../Button/Button.jsx'
 
-// import styles from './header.module.scss'
-
-const ServiceCard = ({ service, aboutService, information, style, styleP}) => {
-    let informations = information.map((e) => <div style={styleP} className={stules.information}>
-        <Image src={`/${e.img}`} alt='' width={30} height={39} />
-        <p>{e.name}</p>
+const ServiceCard = ({ service, aboutService, information, style, styleP, buttonText}) => {
+    let informations = information.map((e) => <div key={Math.random()} style={styleP} className={stules.information}>
+        <Image key={Math.random()} src={`/${e.img}`} alt='' width={30} height={39} />
+        <p key={Math.random()} >{e.name}</p>
     </div>)
 
     return (
@@ -18,8 +16,8 @@ const ServiceCard = ({ service, aboutService, information, style, styleP}) => {
             <div style={styleP} className={stules.informations}>
                 {informations}
             </div>
-            <Button text={'Learn More'}/>
-        </div>
+            <Button text={buttonText}/>
+        </div> 
 
     )
 }

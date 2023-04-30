@@ -14,7 +14,10 @@
         max-width: rem(1017);
         justify-content: center;
         flex-direction: column;
-
+        @include xsm {
+            padding: 0;
+            align-items: center;
+        }
         h3 {
             @include font-kurale();
             color: color(blue);
@@ -22,6 +25,10 @@
             line-height: 130%;
             text-align: center;
             z-index: 1;
+            @include xsm {
+                font-size: font(50);
+                max-width: rem(279);
+            }
         }
 
         .delimiter {
@@ -32,6 +39,9 @@
             background-color: color(blue);
             background-size: rem(1) rem(311);
             z-index: 1;
+            @include xsm {
+                min-width: rem(100);
+            }
         }
 
         .info {
@@ -39,6 +49,16 @@
             padding-top: rem(54);
             justify-content: space-between;
             z-index: 2;
+
+            @include md {
+                padding: rem(54) rem(40);
+            }
+
+            @include xsm {
+                flex-direction: column;
+                padding: rem(73) rem(52);
+
+            }
 
             .blockInfo {
                 max-width: rem(414);
@@ -49,19 +69,42 @@
                     line-height: 130%;
                     padding-bottom: rem(35);
                     color: color(blue);
-                    
+
                 }
+
                 .firstLitter:first-child {
                     &::first-letter {
                         @include font-kurale();
                         font-size: font(80);
                         float: left;
                         padding-top: rem(18);
-                        margin-right: rem(5); 
-                      }
+                        margin-right: rem(5);
+                    }
                 }
             }
         }
 
     }
+}
+
+.ellipse {
+    position: relative;
+    content: '';
+    left: 43.51%;
+    top: rem(-124.8);
+    width: rem(235);
+    height: rem(235);
+    z-index: 33;
+
+    @include md {
+        left: 39%;
+    }
+
+    @include xsm {
+        width: rem(200);
+        height: rem(200);
+        left: 28%;
+        top: rem(-108.8);
+    }
+
 }

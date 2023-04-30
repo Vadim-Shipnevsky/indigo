@@ -1,10 +1,12 @@
-import styles from './aboutMe.module.scss'
+import styles from './aboutMe.module.scss';
+import Image from 'next/image';
 import { useTranslation } from "react-i18next";
 
 const AboutMe = () => {
     const { t } = useTranslation('common');
     return (
         <div className={styles.container}>
+            <Image src={"/backgroundMe.jpg"} alt='' fill objectFit='cover' priority />
             <div className={styles.aboutMe}>
                 <div className={styles.myName}>
                     {t('aboutMe.name')}

@@ -1,7 +1,7 @@
 @use "@/assets/styles/globals.scss" as *;
 
 .container {
-    max-width: rem(482);
+    max-width: rem(574);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +10,7 @@
     @include sbc-font-Regular();
     font-size: font(25);
     border-radius: rem(41);
+    padding-bottom: rem(43);
 
     .informations {
         max-width: rem(410);
@@ -18,6 +19,7 @@
         justify-content: center;
         align-items: center;
         padding-top: rem(33);
+        margin-right: rem(40);
         z-index: 3;
     }
 }
@@ -30,11 +32,17 @@
     padding-bottom: rem(12);
 }
 
-.information{
+.information {
     max-width: rem(410);
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     padding-bottom: rem(30);
+    @include sbc-font-Regular();
+    font-size: font(25);
+    line-height: 130%;
 
+    p {
+        padding-left: rem(18);
+    }
 }

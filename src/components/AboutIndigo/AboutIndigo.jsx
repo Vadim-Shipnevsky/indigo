@@ -7,16 +7,23 @@ const AboutIndigo = () => {
     const { t } = useTranslation('common');
     let informations = [
         { name: `${t("cardService.myServices.tarotReading")}`, img: "sticker1.png" },
-        { name: `${t("cardService.myServices.tarotReading.content")}`, img: "sticker2.png" },
-        { name: `${t("cardService.myServices.tarotReading.content.creativeProjects")}`, img: "sticker3.png" }
+        { name: `${t("cardService.myServices.content")}`, img: "sticker2.png" },
+        { name: `${t("cardService.myServices.creativeProjects")}`, img: "sticker3.png" }
     ];
     const divStyle = {
         background: 'rgba(0, 16, 78, 0.52)',
         backdropFilter: 'blur(1.375rem)',
+        margin: '0 auto',
+        marginTop: '14.3125rem',
     };
+    // width={235} height={235}
     return (
         <div className={styles.container}>
             <Image src={"/bgAboutIndigo.jpg"} alt='' fill objectFit='cover' />
+            <div className={styles.ellipse}>
+                <Image src={"/ellipse.png"} alt='' fill object-fit="contain" objectFit='cover' />
+
+            </div>
             <div className={styles.aboutIndigo}>
                 <h3>{t("aboutIndigoFlow.aboutIndigoFlow")}</h3>
                 <samp className={styles.delimiter} />
@@ -31,8 +38,12 @@ const AboutIndigo = () => {
                         <p>{t("aboutIndigoFlow.myProfessionalExperienceContinuation2")}</p>
                     </div>
                 </div>
-                <ServiceCard service={`${t('cardService.services')}`} aboutService={`${t('cardService.activities')}`} information={informations} style={divStyle} />
             </div>
+            <ServiceCard service={`${t('cardService.services')}`}
+                aboutService={`${t('cardService.activities')}`}
+                information={informations}
+                style={divStyle}
+                buttonText={'Learn More'} />
         </div>
 
     )

@@ -19,8 +19,8 @@ const Home = () => {
       <meta name="viewport" content="width=device-width" />
     </Head>
     <Suspense fallback={<div>Loading...</div>}>
-      {/* <button onClick={() => handle('en')}>EN</button> */}
-      {/* <button onClick={() => handle('ru')}>RU</button> */}
+      <button onClick={() => handle('en')}>EN</button>
+      <button onClick={() => handle('ru')}>RU</button>
       <Header />
       <Greetings />
       <AboutMe />

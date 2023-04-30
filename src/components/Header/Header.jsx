@@ -7,15 +7,18 @@ import MenuButton from './Menu/MenuButton';
 const Header = () => {
     const { t } = useTranslation('common');
     let text = t('header.logo').split('');
-    let text_logo = text.map((e) => <p key={text.length +e}>{e}</p>);
-    return ( 
+    let text_logo = text.map((e) => <p key={Math.random()}>{e}</p>);
+    return (
         <div className={styles.header_1}>
             <Image src={"/hatBackground.jpg"} alt='' fill objectFit='cover' priority />
             <MenuButton />
+            <a href='#' className={styles.contactIcon}>
+                <Image src={"/contact.png"} alt='' fill object-fit="contain" priority />
+            </a>
             <div className={styles.header}>
                 <div className={styles.logoConteiner}>
                     <div className={styles.logo}>
-                        <Image src={"/logo.png"} alt='logo' fill priority/>
+                        <Image src={"/logo.png"} alt='logo' fill priority />
                         <div className={styles.logo_text}>
                             {text_logo}
                         </div>
