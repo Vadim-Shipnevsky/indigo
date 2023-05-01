@@ -15,8 +15,11 @@ const AboutIndigo = () => {
         backdropFilter: 'blur(1.375rem)',
         margin: '0 auto',
         marginTop: '14.3125rem',
+        color: "#DAAFA6",
     };
-    // width={235} height={235}
+    const pStyle = {
+        color: "#F2F2F2",
+    };
     return (
         <div className={styles.container}>
             <Image src={"/bgAboutIndigo.jpg"} alt='' fill objectFit='cover' />
@@ -43,7 +46,8 @@ const AboutIndigo = () => {
                 aboutService={`${t('cardService.activities')}`}
                 information={informations}
                 style={divStyle}
-                buttonText={'Learn More'} />
+                buttonText={'Learn More'} 
+                styleP={pStyle}/>
         </div>
 
     )

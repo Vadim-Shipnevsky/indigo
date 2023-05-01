@@ -15,5 +15,8 @@
         line-height: 130%;
         text-align: center;
         color: color(blue);
+        @include xsm {
+            font-size: font(15);
+        }
     }
 }

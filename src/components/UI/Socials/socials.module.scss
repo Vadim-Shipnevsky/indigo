@@ -1,0 +1,15 @@
+.container {
+    max-width: rem(237);
+    background: rgba(0, 16, 78, 0.12);
+    backdrop-filter: blur(rem(20.6747));
+    border-radius: rem(19.7349);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: rem(62);
+    padding-bottom: rem(55.68);
+    @include font-kurale();
+    color: color(classic);
+    font-size: font(32);
+}

@@ -5,19 +5,29 @@
     position: relative;
     max-width: 100%;
     min-height: rem(2361);
-
+    padding-bottom: rem(141.27);
+    @include xsm {
+        padding-left: rem(54);
+        padding-right: rem(54);
+    }
     .aboutIndigo {
         display: flex;
         z-index: 3;
-        padding-top: rem(139);
+        // padding-top: rem(139);
         margin: 0 auto;
         max-width: rem(1017);
         justify-content: center;
         flex-direction: column;
+
+        @include md {
+            padding-top: 0;
+        }
+
         @include xsm {
             padding: 0;
             align-items: center;
         }
+
         h3 {
             @include font-kurale();
             color: color(blue);
@@ -25,6 +35,7 @@
             line-height: 130%;
             text-align: center;
             z-index: 1;
+
             @include xsm {
                 font-size: font(50);
                 max-width: rem(279);
@@ -39,6 +50,7 @@
             background-color: color(blue);
             background-size: rem(1) rem(311);
             z-index: 1;
+
             @include xsm {
                 min-width: rem(100);
             }
@@ -56,7 +68,7 @@
 
             @include xsm {
                 flex-direction: column;
-                padding: rem(73) rem(52);
+                padding: rem(73) rem(0);
 
             }
 
@@ -103,7 +115,7 @@
     @include xsm {
         width: rem(200);
         height: rem(200);
-        left: 28%;
+        left: 20%;
         top: rem(-108.8);
     }
 

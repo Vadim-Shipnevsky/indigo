@@ -19,42 +19,46 @@
     }
 
     .greetings {
-        margin-left: rem(145);
         max-width: rem(881);
-        display: flex;
+        display: grid;
+        grid-template-columns: minmax(rem(370), rem(480)) rem(0.1) rem(370);
+        grid-auto-rows: minmax(23.125rem, auto);
+        grid-column-gap: rem(95);
         align-items: center;
         justify-content: center;
         @include font-kurale();
 
         @include md {
             margin: 0;
+            display: flex;
             flex-direction: column;
         }
 
         @include xsm {
             margin: 0;
+            display: flex;
             flex-direction: column;
         }
 
         .hello {
-            max-width: rem(345);
-            height: rem(312);
-            display: flex;
-            align-items: center;
+            // max-width: rem(345);
+            // height: rem(312);
+            // display: flex;
+            // align-items: center;
             text-align: right;
             font-size: font(80);
             line-height: 130%;
-            color: colot(peach);
+            color: color(peach);
 
             @include md {
-                height: rem(195);
+                // height: rem(195);
                 max-width: rem(469);
                 text-align: center;
                 margin-bottom: rem(50);
             }
 
             @include xsm {
-                height: rem(195);
+                // height: rem(195);
                 max-width: rem(245);
                 text-align: center;
                 font-size: font(50);
@@ -63,44 +67,44 @@
         }
 
         .delimiter {
-            min-width: rem(282);
-            height: rem(1);
+            height: rem(282);
             background-color: color(white);
             background-size: rem(1) rem(282);
-            transform: rotate(90deg);
 
             @include md {
                 min-width: rem(100);
+                height: rem(1);
                 transform: rotate(180deg);
             }
 
             @include xsm {
                 min-width: rem(100);
+                height: rem(1);
                 transform: rotate(180deg);
             }
         }
 
         .welcome {
-            max-width: rem(370);
-            height: rem(156);
+            // min-width: rem(370);
+            // height: rem(156);
             font-size: font(30);
             line-height: 130%;
             color: color(text-orange);
 
             @include md {
-                height: rem(128);
+                max-width: rem(370);
                 margin-top: rem(50);
-                display: flex;
-                align-items: center;
                 text-align: center;
             }
 
             @include xsm {
                 font-size: font(25);
-                height: rem(128);
+                max-width: rem(370);
+
+                // height: rem(128);
                 margin-top: rem(50);
-                display: flex;
-                align-items: center;
+                // display: flex;
+                // align-items: center;
                 text-align: center;
             }
         }

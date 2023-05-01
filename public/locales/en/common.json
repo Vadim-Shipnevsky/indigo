@@ -31,10 +31,10 @@
         },
         "buttonLearnMore": "Learn More"
     },
-    "ConsultingTopics":{
+    "consultingTopics":{
         "title": "Consultation Topics",
         "title2": "During your personal consultations, we will consider all your questions. Such questions may be:",
-        "BusinessConsulting":{
+        "businessConsulting":{
             "title": "Business Consulting",
             "text_1": "launching a new project",
             "text_2": "the right strategy",
@@ -44,7 +44,7 @@
             "text_6": "potential of specialists",
             "text_7": "transactions"
         },
-        "Studies&Work":{
+        "studies&Work":{
             "title": "Studies & Work",
             "text_1": "choice of direction in study and / or educational institution",
             "text_2": "situations during the educational process",
@@ -59,26 +59,26 @@
             "text_3": "further development of relationships",
             "text_4": "the situation of choice"
         },
-        "Society":{
+        "society":{
             "title": "Society",
             "text_1": "how people perceive you",
             "text_2": "family secrets",
             "text_3": "conflict situations"
         },
-        "PersonalDevelopment":{
+        "personalDevelopment":{
             "title": "Personal development",
             "text_1": "your karmic path",
             "text_2": "your past, present and future",
             "text_3": "the lessons you are currently going through",
             "text_4": "meaning in life"
         },
-        "Relocation":{
+        "relocation":{
             "title": "Relocation / Tourist trips",
             "text_1": "questions of choice: to go or not to go, where to go",
             "text_2": "how to settle in a new place",
             "text_3": " pitfalls of moving"
         },
-        "OtherTopics":{
+        "otherTopics":{
             "title": "Other topics",
             "text_1": " I am open to a variety of topics that interest you",
             "text_2": " I am open to a variety of topics that interest you",
@@ -86,7 +86,7 @@
         },
         "button": "Contact Indie"
     },
-    "OnlineConsultations":{
+    "onlineConsultations":{
         "title": "Online Consultations",
         "paragraph_1": "Classic Tarot Reading",
         "paragraph_2": "Thematic Tarot Reading",

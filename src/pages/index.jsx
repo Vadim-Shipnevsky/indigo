@@ -6,6 +6,7 @@ import Header from "../components/Header/Header.jsx";
 import Greetings from "../components/Greetings/Greetings.jsx";
 import AboutMe from "../components/AboutMe/AboutMe.jsx";
 import AboutIndigo from "../components/AboutIndigo/AboutIndigo.jsx";
+import Consulting from "../components/Consulting/Consulting"
 import Head from 'next/head';
 
 
@@ -25,6 +26,7 @@ const Home = () => {
       <Greetings />
       <AboutMe />
       <AboutIndigo />
+      <Consulting />
     </Suspense>
   </>
 }

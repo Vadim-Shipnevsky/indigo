@@ -46,6 +46,7 @@
             height: rem(312);
             display: flex;
             align-items: center;
+            text-align: center;
             font-size: font(80);
             line-height: 130%;
             color: color(peach);
@@ -65,7 +66,8 @@
 
         .myWay {
             max-width: rem(574);
-            height: rem(501);
+            // height: rem(501);
+            padding: rem(80);
             margin-left: rem(80);
             background: rgba(0, 16, 78, 0.12);
             backdrop-filter: blur(rem(22));
@@ -85,13 +87,13 @@
             @include xsm {
                 max-width: rem(330);
                 height: rem(324);
+                padding: 0;
                 margin: 0;
                 font-size: font(19);
                 text-align: center;
             }
 
             .text {
-                padding: rem(80);
 
                 >p:first-child {
                     padding-bottom: rem(33);

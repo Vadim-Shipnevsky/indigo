@@ -6,11 +6,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     z-index: 3;
     @include sbc-font-Regular();
     font-size: font(25);
     border-radius: rem(41);
     padding-bottom: rem(43);
+
+    @include xsm {
+        font-size: font(19);
+        padding-left: rem(32);
+        padding-right: rem(32);
+    }
 
     .informations {
         max-width: rem(410);
@@ -21,6 +28,10 @@
         padding-top: rem(33);
         margin-right: rem(40);
         z-index: 3;
+        @include xsm {
+            margin-right: 0;
+
+        }
     }
 }
 
@@ -30,6 +41,9 @@
     line-height: 130%;
     padding-top: rem(33);
     padding-bottom: rem(12);
+    @include xsm {
+        font-size: font(50);
+    }
 }
 
 .information {
@@ -37,12 +51,22 @@
     display: flex;
     align-items: start;
     justify-content: center;
+    text-align: start;
     padding-bottom: rem(30);
     @include sbc-font-Regular();
     font-size: font(25);
     line-height: 130%;
+    @include xsm {
+        font-size: font(16);
+    }
 
     p {
         padding-left: rem(18);
+    }
+    .image{
+        @include xsm {
+            width: rem(20);
+            height: rem(26);
+        }
     }
 }
