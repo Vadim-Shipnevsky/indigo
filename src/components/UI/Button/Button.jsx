@@ -1,8 +1,8 @@
 import stules from './button.module.scss'
 
-const Button = ({ text }) => {
+const Button = ({ text, stulesButton }) => {
     return (
-        <div className={stules.container}>
+        <div style={stulesButton} className={stules.container}>
             <button className={stules.button}>{text}</button>
         </div>
     )

@@ -1,6 +1,8 @@
 @use "@/assets/styles/globals.scss" as *;
 
 .container {
+    position: absolute;
+    bottom: rem(45);
     display: flex;
     align-items: center;
     justify-content: center;

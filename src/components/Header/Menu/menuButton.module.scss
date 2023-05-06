@@ -1,19 +1,18 @@
 @use "@/assets/styles/globals.scss" as *;
 
 
-.containerMenu {
-    display: flex;
-    flex-direction: column;
-}
+
 
 .buttonMenu {
-    display: flex;
-    justify-content: end;
-    margin: 0 rem(69);
-    padding-top: rem(53);
+    position: absolute;
+    top: rem(53);
+    right: rem(69);
 
     @include xsm {
-        margin: 0 auto;
+        min-width: rem(199);
+        min-height: rem(82);
+        left: 50%;
+        transform: translate(-50%);
     }
 
     .button {

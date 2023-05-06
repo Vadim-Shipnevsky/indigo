@@ -2,16 +2,21 @@
 
 .container {
     max-width: rem(574);
+    min-height: rem(705);
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
+    padding-left: rem(56);
+    padding-right: rem(56);
     align-items: center;
     text-align: center;
     z-index: 3;
     @include sbc-font-Regular();
     font-size: font(25);
     border-radius: rem(41);
-    padding-bottom: rem(43);
+    
+    // padding-bottom: rem(43);
 
     @include xsm {
         font-size: font(19);
@@ -24,7 +29,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         padding-top: rem(33);
         margin-right: rem(40);
         z-index: 3;
@@ -37,7 +42,7 @@
 
 .container p:first-child {
     @include font-kurale();
-    font-size: font(80);
+    font-size: font(70);
     line-height: 130%;
     padding-top: rem(33);
     padding-bottom: rem(12);
@@ -69,4 +74,20 @@
             height: rem(26);
         }
     }
+}
+
+.buttonContainer{
+    position: absolute;
+    bottom: rem(43);
+}
+
+.number{
+    position: absolute;
+    top: rem(29);
+    left: rem(489);
+    @include font-kurale();
+    font-size: font(35);
+    color: color(blue);
+    line-height: 130%;
+    font-weight: 400;
 }

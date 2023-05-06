@@ -1,5 +1,5 @@
 {
-    "header": {
+    "header":{
         "logo": "IndigoFlow",
         "personal": "Personal",
         "tarot": "Tarot Readings Online"
@@ -36,53 +36,54 @@
         "title2": "During your personal consultations, we will consider all your questions. Such questions may be:",
         "businessConsulting":{
             "title": "Business Consulting",
-            "text_1": "launching a new project",
-            "text_2": "the right strategy",
-            "text_3": "competitors",
-            "text_4": "financing",
-            "text_5": "extension",
-            "text_6": "potential of specialists",
-            "text_7": "transactions"
+            "text_1": "Launching a new project",
+            "text_2": "The right strategy",
+            "text_3": "Competitors",
+            "text_4": "Financing",
+            "text_5": "Extension",
+            "text_6": "Potential of specialists",
+            "text_7": "Transactions"
         },
         "studies&Work":{
             "title": "Studies & Work",
-            "text_1": "choice of direction in study and / or educational institution",
-            "text_2": "situations during the educational process",
-            "text_3": " job change",
-            "text_4": "team",
-            "text_5": "general situation in the workplace"
+            "text_1": "Choice of direction in study and / or educational institution",
+            "text_2": "Situations during the educational process",
+            "text_3": "Job change",
+            "text_4": "Team",
+            "text_5": "General situation in the workplace"
         },
         "loveRelationships":{
             "title": "Love relationships",
-            "text_1": "feelings, thoughts, plans, actions of a partner",
-            "text_2": "how does your partner see you",
-            "text_3": "further development of relationships",
-            "text_4": "the situation of choice"
+            "text_1": "Feelings, thoughts, plans, actions of a partner",
+            "text_2": "How does your partner see you",
+            "text_3": "Further development of relationships",
+            "text_4": "The situation of choice"
         },
         "society":{
             "title": "Society",
-            "text_1": "how people perceive you",
-            "text_2": "family secrets",
-            "text_3": "conflict situations"
+            "text_1": "How people perceive you",
+            "text_2": "Family secrets",
+            "text_3": "Conflict situations"
         },
         "personalDevelopment":{
             "title": "Personal development",
-            "text_1": "your karmic path",
-            "text_2": "your past, present and future",
-            "text_3": "the lessons you are currently going through",
-            "text_4": "meaning in life"
+            "text_1": "Your karmic path",
+            "text_2": "Your past, present and future",
+            "text_3": "The lessons you are currently going through",
+            "text_4": "Meaning in life"
         },
         "relocation":{
             "title": "Relocation / Tourist trips",
-            "text_1": "questions of choice: to go or not to go, where to go",
-            "text_2": "how to settle in a new place",
-            "text_3": " pitfalls of moving"
+            "text_1": "Questions of choice:",
+            "text_2": "To go or not to go, where to go",
+            "text_3": "How to settle in a new place",
+            "text_4": "Pitfalls of moving"
         },
         "otherTopics":{
             "title": "Other topics",
-            "text_1": " I am open to a variety of topics that interest you",
-            "text_2": " I am open to a variety of topics that interest you",
-            "text_3": "honesty with yourself and the tarot reader in my face will allow you to find the most effective solution to any situation."
+            "text_1": "I am open to a variety of topics that interest you",
+            "text_2": "Do not be afraid to ask the right question, because the more accurate questions are formulated, the more accurate answers you will get.",
+            "text_3": "Honesty with yourself and the tarot reader in my face will allow you to find the most effective solution to any situation."
         },
         "button": "Contact Indie"
     },

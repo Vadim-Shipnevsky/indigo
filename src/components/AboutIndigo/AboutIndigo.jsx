@@ -1,6 +1,6 @@
 import styles from './aboutIndigo.module.scss'
 import Image from 'next/image';
-import { useTranslation } from "react-i18next";
+import { useTranslation } from 'next-i18next';
 import ServiceCard from "../UI/ServiceCard/ServiceCard"
 
 const AboutIndigo = () => {
@@ -22,14 +22,14 @@ const AboutIndigo = () => {
     };
     return (
         <div className={styles.container}>
-            <Image src={"/bgAboutIndigo.jpg"} alt='' fill objectFit='cover' />
+            <Image src={"/bgAboutIndigo.jpg"} alt='' fill object-fit='cover' />
             <div className={styles.ellipse}>
-                <Image src={"/ellipse.png"} alt='' fill object-fit="contain" objectFit='cover' />
+                <Image src={"/ellipse.png"} alt='' fill object-fit="contain" />
 
             </div>
             <div className={styles.aboutIndigo}>
                 <h3>{t("aboutIndigoFlow.aboutIndigoFlow")}</h3>
-                <samp className={styles.delimiter} />
+                <span className={styles.delimiter} />
                 <div className={styles.info}>
                     <div className={styles.blockInfo}>
                         <p className={styles.firstLitter}>{t("aboutIndigoFlow.changes")}</p>

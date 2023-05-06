@@ -1,5 +1,8 @@
+@use "@/assets/styles/globals.scss" as *;
+
 .container {
-    max-width: rem(237);
+    width: rem(237);
+    max-height: rem(237);
     background: rgba(0, 16, 78, 0.12);
     backdrop-filter: blur(rem(20.6747));
     border-radius: rem(19.7349);
@@ -12,4 +15,10 @@
     @include font-kurale();
     color: color(classic);
     font-size: font(32);
+    img{
+        margin: 0 auto;
+    }
+    p{
+        padding-top: rem(22.84);
+    }
 }

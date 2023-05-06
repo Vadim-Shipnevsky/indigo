@@ -32,3 +32,10 @@ html, body {
     overscroll-behavior-y: none;
     background-color: color(gray-6);
 }
+
+footer{
+    width: 100%;
+    min-height: rem(651);
+    background-color: color(blue);
+    z-index: 2222;
+}

@@ -1,13 +1,16 @@
 import styles from './header.module.scss'
-import { useTranslation } from "react-i18next";
 import Image from 'next/image';
-
 import MenuButton from './Menu/MenuButton';
+import Logotip from './Logotip'
+import { useTranslation } from 'next-i18next';
+
+
 
 const Header = () => {
-    const { t } = useTranslation('common');
-    let text = t('header.logo').split('');
-    let text_logo = text.map((e) => <p key={Math.random()}>{e}</p>);
+    const { t } = useTranslation('common')
+    // let text = t('header.logo').split('');
+    // let text_logo = text.map((e) => <p key={Math.random()}>{e}</p>);
+
     return (
         <div className={styles.header_1}>
             <Image src={"/hatBackground.jpg"} alt='' fill objectFit='cover' priority />
@@ -20,7 +23,9 @@ const Header = () => {
                     <div className={styles.logo}>
                         <Image src={"/logo.png"} alt='logo' fill priority />
                         <div className={styles.logo_text}>
-                            {text_logo}
+                            {/* {text_logo} */}
+                            {/* <Image className={styles.logosvg} src={"/logotip.svg"} alt='logo' fill object-fit="contain" priority /> */}
+                            <Logotip />
                         </div>
                     </div>
                 </div>
@@ -32,9 +37,11 @@ const Header = () => {
                     <Image className={styles.arrow1} src='/arrow.png' alt='' width={45} height={23} />
                 </a>
             </div>
+
         </div>
 
     )
 }
+
 
 export default Header

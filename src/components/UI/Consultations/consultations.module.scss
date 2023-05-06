@@ -1,4 +1,7 @@
-.container{
+@use "@/assets/styles/globals.scss" as *;
+
+.container {
+    position: relative;
     max-width: rem(687);
     background: rgba(0, 16, 78, 0.12);
     backdrop-filter: blur(1.375rem);
@@ -6,4 +9,27 @@
     padding: rem(50) rem(63);
     display: flex;
     align-items: center;
+    z-index: 2;
+    @include font-kurale();
+    font-size: font(35);
+    line-height: 130%;
+    margin-bottom: rem(20);
+    
+    .button {
+        position: absolute;
+        left: rem(601);
+        min-width: rem(22.5);
+        min-height:  rem(22.5);
+        cursor: pointer;
+       
+        .image{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0; 
+        }
+      
+    }
 }
+.container p:last-of-type{ padding-left: rem(40);}

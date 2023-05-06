@@ -1,7 +1,12 @@
-const NextI18n = require('next-i18next').default
+const path = require('path')
 
-module.exports = new NextI18n({
-    defaultLanguage: 'en',
-    otherLanguages: ['ru', 'en'],
-    localePath: 'public/locales'
-})
+module.exports = {
+    i18n: {
+      defaultLocale: 'en',
+      locales: ['en', 'ru'],
+      localePath: path.resolve('./src/locales'),
+      localeSubpaths: {
+        ru: 'ru'
+      }
+    },
+  }
