@@ -13,9 +13,12 @@ const MenuButton = () => {
             <div className={stules.buttonMenu}>
                 <button className={stules.button} onClick={() => activeMenu ? setActiveMenu(false) : setActiveMenu(true)}>
                     menu
+                        {/* <span></span>
+                        <span></span>
+                        <span></span> */}
                 </button>
             </div>
-            {activeMenu ? <Menu/> : <></>}
+            {activeMenu ? <Menu /> : <></>}
         </div>
 
 

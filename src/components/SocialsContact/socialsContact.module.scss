@@ -1,15 +1,21 @@
 @use "@/assets/styles/globals.scss" as *;
 
-.onlineConsultations{
+.onlineConsultations {
     max-width: 100%;
     max-height: rem(1133);
     position: relative;
     padding-bottom: rem(104.46);
-    .container{
+
+    @include md {
+        max-height: rem(1520);
+    }
+
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: rem(96);
+
         >p {
             @include font-kurale();
             color: color(peach);
@@ -17,12 +23,13 @@
             line-height: 130%;
             text-align: center;
             z-index: 2;
-    
+
             @include xsm {
                 font-size: font(50);
                 max-width: rem(279);
             }
         }
+
         .delimiter {
             min-width: rem(311);
             margin: 0 auto;
@@ -31,26 +38,74 @@
             background-color: color(peach);
             background-size: rem(1) rem(311);
             z-index: 2;
-    
+
             @include xsm {
                 min-width: rem(100);
             }
         }
-        .socialsContainer{
+
+        .socialsContainer {
             display: flex;
             align-items: center;
             max-width: rem(1248);
             margin-top: rem(70);
-            div{
+
+            div {
                 margin-left: rem(100);
             }
-            div:first-child{
+
+            div:first-child {
                 margin-left: 0;
             }
+
+            @include md {
+                display: grid;
+                grid-template-columns: rem(250) rem(250);
+                grid-template-rows: rem(250) rem(250);
+                grid-row-gap: rem(100);
+                grid-column-gap: rem(100);
+
+                div {
+                    margin-left: 0;
+                }
+            }
+
+            @include xsm {
+                display: grid;
+                grid-template-columns: rem(170) rem(170);
+                grid-template-rows: rem(170) rem(170);
+                grid-row-gap: rem(32.84);
+                grid-column-gap: rem(32.84);
+
+                div {
+                    margin-left: 0;
+                }
+            }
         }
-        .socials{
+
+        .contactContainer {
+            display: flex;
+            align-items: center;
+            max-width: rem(700);
+            margin-top: rem(70);
+
+            div {
+                margin-left: rem(100);
+            }
+
+            div:first-child {
+                margin-left: 0;
+            }
+
+            @include xsm {
+                div {
+                    margin-left: rem(32.84);
+                }
+            }
+        }
+
+        .socials {
             margin-top: rem(70);
         }
     }
 }
-

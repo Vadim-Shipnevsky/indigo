@@ -1,0 +1,11 @@
+@use "@/assets/styles/globals.scss" as *;
+
+.svg {
+    width: rem(25);
+    height: rem(14);
+
+    @include xsm {
+        width: rem(10.82);
+        height: rem(5.53);
+    }
+}

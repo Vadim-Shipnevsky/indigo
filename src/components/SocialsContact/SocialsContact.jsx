@@ -20,7 +20,7 @@ const SocialsContact = () => {
                 </div>
                 <p className={styles.socials}>{t('Contact')}</p>
                 <span className={styles.delimiter} />
-                <div className={styles.socialsContainer}>
+                <div className={styles.contactContainer}>
                     <Socials props={'Telegram'} />
                     <Socials props={'Whatsapp'} />
                 </div>

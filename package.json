@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
-
   "dependencies": {
+    "@rooks/use-window-size": "^4.11.2",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
@@ -20,7 +20,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^12.2.2",
+    "rooks": "^7.14.1",
     "sass": "^1.62.0",
+    "swiper": "^9.2.4",
     "typescript": "5.0.4"
   }
 }

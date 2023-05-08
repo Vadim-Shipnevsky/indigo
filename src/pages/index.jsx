@@ -22,14 +22,14 @@ const Home = () => {
       <meta name="viewport" content="width=device-width" />
     </Head>
     <Suspense fallback={<div>Loading...</div>}>
-      {/* <Header  /> */}
-      {/* <Greetings /> */}
-      {/* <AboutMe /> */}
-      {/* <AboutIndigo /> */}
-      {/* <Consulting /> */}
+      <Header  />
+      <Greetings />
+      <AboutMe />
+      <AboutIndigo />
+      <Consulting />
       <OnlineConsultations />
-      {/* <ChooseYourPackage /> */}
-      {/* <SocialsContact /> */}
+      <ChooseYourPackage />
+      <SocialsContact />
       <footer/>
     </Suspense>
   </>

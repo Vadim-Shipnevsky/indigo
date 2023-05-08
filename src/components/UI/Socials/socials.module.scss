@@ -15,10 +15,26 @@
     @include font-kurale();
     color: color(classic);
     font-size: font(32);
-    img{
+
+    @include xsm {
+        max-width: rem(168.58);
+        max-height: rem(168.58);
+        font-size: font(23);
+
+    }
+
+    img {
         margin: 0 auto;
     }
-    p{
+
+    image {
+        @include xsm {
+            max-width: rem(46.61);
+            max-height: rem(46.61);
+        }
+    }
+
+    p {
         padding-top: rem(22.84);
     }
 }

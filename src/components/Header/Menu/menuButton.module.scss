@@ -1,12 +1,15 @@
 @use "@/assets/styles/globals.scss" as *;
 
 
-
-
 .buttonMenu {
-    position: absolute;
+    position: fixed;
     top: rem(53);
     right: rem(69);
+    z-index: 222;
+    // display: flex;
+    // justify-content: flex-end;
+    // padding-top: rem(53);
+    // padding-right: rem(69);
 
     @include xsm {
         min-width: rem(199);
@@ -25,7 +28,7 @@
         background: rgba(255, 255, 255, 0.1);
         backdrop-filter: blur(rem(10));
         border: none;
-        @include font-kurale();
+        @include sbc-font-Regular();
         font-size: font(15);
         line-height: 120%;
         letter-spacing: 1em;
@@ -36,6 +39,19 @@
         @include xsm {
             min-width: rem(199);
             min-height: rem(82);
+        }
+
+        span{
+            position: absolute;
+            width: rem(28);
+            height: rem(1);
+            background-color: color(white);
+        }
+        span:nth-of-type(2){
+            margin-bottom: rem(7);
+        }
+        span:nth-of-type(3){
+            margin-top: rem(7);
         }
 
         &:hover {
