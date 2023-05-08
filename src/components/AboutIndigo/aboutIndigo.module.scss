@@ -59,16 +59,25 @@
         .info {
             display: flex;
             padding-top: rem(54);
+            padding-bottom: rem(271);
             justify-content: space-between;
             z-index: 2;
 
             @include md {
-                padding: rem(54) rem(40);
+                // padding: rem(54) rem(40);
+                padding-left: rem(40);
+                padding-right: rem(40);
+                padding-top: rem(54);
+                padding-bottom: rem(200);
             }
 
             @include xsm {
                 flex-direction: column;
-                padding: rem(73) rem(0);
+                // padding: rem(73) rem(0);
+                padding-left: 0;
+                padding-right: 0;
+                padding-top: rem(73);
+                padding-bottom: rem(133);
 
             }
 

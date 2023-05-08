@@ -14,15 +14,17 @@ const AboutIndigo = () => {
         background: 'rgba(0, 16, 78, 0.52)',
         backdropFilter: 'blur(1.375rem)',
         margin: '0 auto',
-        marginTop: '14.3125rem',
+        // marginTop: '14.3125rem',
         color: "#DAAFA6",
+        minHeight: '', 
     };
     const pStyle = {
         color: "#F2F2F2",
     };
+
     return (
         <div className={styles.container}>
-            <Image src={"/bgAboutIndigo.jpg"} alt='' fill object-fit='cover' />
+            <Image src={"/bgAboutIndigo.jpg"} alt='' fill objectFit='cover' />
             <div className={styles.ellipse}>
                 <Image src={"/ellipse.png"} alt='' fill object-fit="contain" />
 

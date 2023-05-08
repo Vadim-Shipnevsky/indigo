@@ -60,11 +60,11 @@ $breakpoints-fonts: (
   }
 }
 
-// @mixin lg {
-//   @media screen and (max-width: point(lg)) {
-//     @content;
-//   }
-// }
+@mixin lg {
+  @media screen and (max-width: point(lg)) {
+    @content;
+  }
+}
 
 // @mixin md {
 //   @media screen and (max-width: point(md)) {

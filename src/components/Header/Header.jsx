@@ -27,17 +27,19 @@ const Header = () => {
                             {/* <Image className={styles.logosvg} src={"/logotip.svg"} alt='logo' fill object-fit="contain" priority /> */}
                             <Logotip />
                         </div>
+
                     </div>
                 </div>
-                <div className={styles.tarot}>
+                
+            </div>
+
+            <div className={styles.tarot}>
                     <p>{t('header.personal')}</p>
                     <h2>{t('header.tarot')}</h2>
                 </div>
                 <a className={styles.arrow} href='#'>
                     <Image className={styles.arrow1} src='/arrow.png' alt='' width={45} height={23} />
                 </a>
-            </div>
-
         </div>
 
     )

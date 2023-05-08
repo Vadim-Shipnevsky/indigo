@@ -15,28 +15,68 @@
     @include sbc-font-Regular();
     font-size: font(25);
     border-radius: rem(41);
-    
-    // padding-bottom: rem(43);
+
+    @include lg {
+        min-height: rem(736);
+    }
+
+    @include md {
+        min-height: rem(784);
+    }
 
     @include xsm {
+        min-height: rem(654);
         font-size: font(19);
         padding-left: rem(32);
         padding-right: rem(32);
     }
 
-    .informations {
-        max-width: rem(410);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-        padding-top: rem(33);
-        margin-right: rem(40);
-        z-index: 3;
-        @include xsm {
-            margin-right: 0;
 
-        }
+}
+
+.containerRu {
+    max-width: rem(574);
+    min-height: rem(848);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    padding-left: rem(56);
+    padding-right: rem(56);
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    @include sbc-font-Regular();
+    font-size: font(25);
+    border-radius: rem(41);
+
+    // padding-bottom: rem(43);
+    @include md {
+        font-size: font(20);
+        min-height: rem(736);
+    }
+
+    @include xsm {
+        min-height: rem(700);
+        font-size: font(16);
+        padding-left: rem(32);
+        padding-right: rem(32);
+    }
+}
+
+.informations {
+    max-width: rem(410);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-top: rem(33);
+    margin-right: rem(40);
+    z-index: 3;
+
+    @include xsm {
+        margin-right: 0;
+
     }
 }
 
@@ -46,8 +86,22 @@
     line-height: 130%;
     padding-top: rem(33);
     padding-bottom: rem(12);
+
     @include xsm {
-        font-size: font(50);
+        font-size: font(43);
+    }
+}
+
+.containerRu p:first-child {
+    max-width: rem(380);
+    @include font-kurale();
+    font-size: font(56);
+    line-height: 130%;
+    padding-top: rem(33);
+    padding-bottom: rem(12);
+
+    @include xsm {
+        font-size: font(43);
     }
 }
 
@@ -61,6 +115,12 @@
     @include sbc-font-Regular();
     font-size: font(25);
     line-height: 130%;
+
+    @include md {
+        font-size: font(20);
+
+    }
+
     @include xsm {
         font-size: font(16);
     }
@@ -68,7 +128,8 @@
     p {
         padding-left: rem(18);
     }
-    .image{
+
+    .image {
         @include xsm {
             width: rem(20);
             height: rem(26);
@@ -76,12 +137,12 @@
     }
 }
 
-.buttonContainer{
+.buttonContainer {
     position: absolute;
     bottom: rem(43);
 }
 
-.number{
+.number {
     position: absolute;
     top: rem(29);
     left: rem(489);

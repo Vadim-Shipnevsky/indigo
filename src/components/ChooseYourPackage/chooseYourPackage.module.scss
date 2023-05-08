@@ -2,7 +2,7 @@
 
 .ChooseYourPackage {
     max-width: 100%;
-    max-height: rem(2000);
+    max-height: rem(2160);
     background-color: color(blue);
 
 
@@ -11,6 +11,7 @@
         flex-direction: column;
         align-items: center;
         padding-top: rem(90);
+
         h6 {
             @include font-kurale();
             color: color(peach);
@@ -38,13 +39,61 @@
                 min-width: rem(100);
             }
         }
-        .conteinerCards{
+
+        .conteinerCards {
             display: grid;
             grid-template-columns: rem(574) rem(574);
             grid-template-rows: rem(755) rem(865);
             grid-row-gap: rem(78);
             grid-column-gap: rem(100px);
             margin-top: rem(76);
+            @include md {
+                // display: grid;
+                // grid-template-columns: 44rem 44rem 44rem 44rem;
+                // grid-template-rows: 48rem;
+                overflow: auto;
+                display: block;
+                max-width: 44.25rem;
+                padding-bottom: rem(25);
+            }
+            @include xsm {
+                // display: grid;
+                // grid-template-columns: rem(370) rem(370) rem(370) rem(370);
+                // grid-template-rows: rem(650);
+                overflow: auto;
+                display: block;
+                max-width: rem(390);
+                padding-bottom: rem(25);
+            }
+        }
+
+        .conteinerCardsRu {
+            display: grid;
+            grid-template-columns: rem(574) rem(574);
+            grid-template-rows: rem(848) rem(912);
+            grid-row-gap: rem(78);
+            grid-column-gap: rem(100px);
+            margin-top: rem(76);
+
+            @include md {
+                // display: grid;
+                overflow: auto;
+                display: block;
+                // grid-template-columns: 44rem 44rem 44rem 44rem;
+                // grid-template-rows: 48rem;
+                max-width: 44.25rem;
+                padding-bottom: rem(25);
+            }
+            @include xsm {
+                // display: grid;
+                display: block;
+
+                overflow: auto;
+                // grid-template-columns: rem(370) rem(370) rem(370) rem(370);
+                // grid-template-rows: rem(708);
+                max-width: rem(390);
+                padding-bottom: rem(25);
+            }
         }
     }
 
